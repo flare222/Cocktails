@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import './styles/main.scss'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Nav from './Components/Nav'
+import Searchbar from './Components/Searchbar';
+import Home from './Components/Home'
+import CocktailIndex from './Components/CocktailIndex';
+import CocktailShow from './Components/CocktailShow';
+import SearchResults from './Components/SearchResults';
+import SearchError from './Components/SearchError'
+
+export default class App extends React.Component {
+
+  render() {
+    return (
+      <div className="page-wrap">
+        <BrowserRouter>
+        <Nav />
+        <Searchbar />
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path='/cocktails/:id' component={CocktailShow}/>
+          <Route path="/searchresults/:cocktail" component={SearchResults}/>
+          <Route path="/:alcohol" component={CocktailIndex}/>
+          <Route path="/searchresults*" component={SearchError} />
+        
+        </Switch>
+        </BrowserRouter>
+      </div>
+    )
+  }
 }
 
-export default App;
+
