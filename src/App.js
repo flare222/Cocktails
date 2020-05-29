@@ -20,7 +20,7 @@ export default class App extends React.Component {
         <Nav />
         <Searchbar />
         <Switch>
-          <Route exact path="/" component={CheckAge} />
+          <Route exact path="/cocktails" component={CheckAge} />
           <Route path="/home" component={Home} />
           <Route path='/cocktails/:id' component={CocktailShow} />
           <Route path="/searchresults/notfound" component={SearchError} />
