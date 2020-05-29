@@ -5,12 +5,15 @@ import { Link } from 'react-router-dom'
 
 export default function CocktailIndex({ match }) {
   const alchohol = match.params.alcohol
-  console.log(alchohol)
-  const { data: alcoholSelection, loading } = useFetch(getAlcoholSelection, alchohol)
+  
+  const { data: alcoholSelection, loading, error } = useFetch(getAlcoholSelection, alchohol)
+
+  console.log(match.params)
+  console.log(error)
 
     return (
       <div className="section-wrapper">
-      <h1>{alchohol}</h1>
+      <h1 className="index-h1">{alchohol}</h1>
       
       <div className="thumb-div">
       {loading ? 

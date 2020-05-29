@@ -9,6 +9,7 @@ import CocktailIndex from './Components/CocktailIndex';
 import CocktailShow from './Components/CocktailShow';
 import SearchResults from './Components/SearchResults';
 import SearchError from './Components/SearchError'
+import CheckAge from './Components/CheckAge';
 
 export default class App extends React.Component {
 
@@ -19,11 +20,12 @@ export default class App extends React.Component {
         <Nav />
         <Searchbar />
         <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path='/cocktails/:id' component={CocktailShow}/>
-          <Route path="/searchresults/:cocktail" component={SearchResults}/>
-          <Route path="/:alcohol" component={CocktailIndex}/>
-          <Route path="/searchresults*" component={SearchError} />
+          <Route exact path="/" component={CheckAge} />
+          <Route path="/home" component={Home} />
+          <Route path='/cocktails/:id' component={CocktailShow} />
+          <Route path="/searchresults/notfound" component={SearchError} />
+          <Route path="/searchresults/:cocktail" component={SearchResults} />
+          <Route path="/list/:alcohol" component={CocktailIndex}/>
         
         </Switch>
         </BrowserRouter>

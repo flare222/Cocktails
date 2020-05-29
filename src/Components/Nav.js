@@ -10,6 +10,7 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const { data: alcoholList} = useFetch(getAlcoholList)
 
+
   return (
     <>
       <button className="logo-btn menu" onClick={() => setIsOpen(!isOpen)}><FaCocktail /></button>
@@ -17,14 +18,22 @@ export default function Nav() {
       <nav className="sidenav">
           <div className="alcohol-links">
             <a onClick={() => setIsOpen(!isOpen)}><IoMdClose /></a>
-            <Link to='/'>Home</Link>
-            <Link to={`/${alcoholList.drinks[21].strIngredient1}`}>Vodka</Link>
-            <Link to={`/${alcoholList.drinks[38].strIngredient1}`}>Rum</Link>
-            <Link to={`/${alcoholList.drinks[2].strIngredient1}`}>Gin</Link>
-            <Link to={`/${alcoholList.drinks[17].strIngredient1}`}>Champagne</Link>
-            <Link to={`/${alcoholList.drinks[42].strIngredient1}`}>Cognac</Link>
-            <Link to={`/${alcoholList.drinks[85].strIngredient1}`}>Whisky</Link>
-            <Link to={`/${alcoholList.drinks[15].strIngredient1}`}>Amaretto</Link>
+            <Link to='/home'
+            onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to={`/list/${alcoholList.drinks[21].strIngredient1}`}
+            onClick={() => setIsOpen(false)}>Vodka</Link>
+            <Link to={`/list/${alcoholList.drinks[38].strIngredient1}`}
+            onClick={() => setIsOpen(false)}>Rum</Link>
+            <Link to={`/list/${alcoholList.drinks[2].strIngredient1}`}
+            onClick={() => setIsOpen(false)}>Gin</Link>
+            <Link to={`/list/${alcoholList.drinks[17].strIngredient1}`}
+            onClick={() => setIsOpen(false)}>Champagne</Link>
+            <Link to={`/list/${alcoholList.drinks[42].strIngredient1}`}
+            onClick={() => setIsOpen(false)}>Cognac</Link>
+            <Link to={`/list/${alcoholList.drinks[85].strIngredient1}`}
+            onClick={() => setIsOpen(false)}>Whiskey</Link>
+            <Link to={`/list/${alcoholList.drinks[15].strIngredient1}`}
+            onClick={() => setIsOpen(false)}>Amaretto</Link>
           </div>
           
           <div className="contact-links">

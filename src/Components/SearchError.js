@@ -4,9 +4,10 @@ const SearchError = () => {
 
   return (
     <div className="section-wrapper">
-      
-        <h2>Cocktail Not Found</h2>
-        <p>Please try again and search by the full cocktail name.</p>
+      <div className="not-found-div">
+        <h1>Cocktail Not Found</h1>
+        <p className="not-found-p">Please try searching with full and part cocktail names, or by alcohol type.</p>
+      </div>
 
     </div>
   )
