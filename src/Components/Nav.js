@@ -55,7 +55,7 @@ export default function Nav() {
               rel="noopener noreferrer">
               <FaLinkedin/>
             </a> 
-            <a href="https://www.linkedin.com/in/clare-robertson-ab1ba0142/"
+            <a href="https://github.com/flare222"
               className="icon"
               target="_blank"
               rel="noopener noreferrer">
