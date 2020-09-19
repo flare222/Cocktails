@@ -10,6 +10,7 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const { data: alcoholList} = useFetch(getAlcoholList)
 
+  // console.log(alcoholList.drinks[39].strIngredient1)
 
   return (
     <>
@@ -22,15 +23,15 @@ export default function Nav() {
             onClick={() => setIsOpen(false)}>Home</Link>
             <Link to={`/list/${alcoholList.drinks[21].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Vodka</Link>
-            <Link to={`/list/${alcoholList.drinks[38].strIngredient1}`}
+            <Link to={`/list/${alcoholList.drinks[39].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Rum</Link>
             <Link to={`/list/${alcoholList.drinks[2].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Gin</Link>
             <Link to={`/list/${alcoholList.drinks[17].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Champagne</Link>
-            <Link to={`/list/${alcoholList.drinks[42].strIngredient1}`}
+            <Link to={`/list/${alcoholList.drinks[43].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Cognac</Link>
-            <Link to={`/list/${alcoholList.drinks[85].strIngredient1}`}
+            <Link to={`/list/${alcoholList.drinks[86].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Whiskey</Link>
             <Link to={`/list/${alcoholList.drinks[15].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Amaretto</Link>

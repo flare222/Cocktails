@@ -16,11 +16,12 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="page-wrap">
-        <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
+        {/* <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}> */}
+        <BrowserRouter>
         <Nav />
         <Searchbar />
         <Switch>
-          <Route exact path="/" component={CheckAge} />
+          <Route exact path="/cocktails/" component={CheckAge} />
           <Route path="/home" component={Home} />
           <Route path='/cocktails/:id' component={CocktailShow} />
           <Route path="/searchresults/notfound" component={SearchError} />
