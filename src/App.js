@@ -16,7 +16,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="page-wrap">
-        <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
+        <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}> 
         <Nav />
         <Searchbar />
         <Switch>
