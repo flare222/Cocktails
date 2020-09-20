@@ -23,7 +23,7 @@ export default function Nav() {
             onClick={() => setIsOpen(false)}>Home</Link>
             <Link to={`/list/${alcoholList.drinks[21].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Vodka</Link>
-            <Link to={`/list/${alcoholList.drinks[39].strIngredient1}`}
+            <Link to={`/list/${alcoholList.drinks[21].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Rum</Link>
             <Link to={`/list/${alcoholList.drinks[2].strIngredient1}`}
             onClick={() => setIsOpen(false)}>Gin</Link>
