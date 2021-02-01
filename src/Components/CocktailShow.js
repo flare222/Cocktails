@@ -5,12 +5,8 @@ import useFetch from '../utils/useFetch'
 
 export default function CocktailShow({ match }) {
   const cocktailId = match.params.id
-  console.log(match.params)
+  // console.log(match.params)
   const { data: oneCocktail, loading} = useFetch(getOneCocktail, cocktailId)
-
-
-  
-
 
   return (
     <div className="section-wrapper">

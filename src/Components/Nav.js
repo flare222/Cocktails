@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { getAlcoholList} from '../lib/api'
+import { getAlcoholList } from '../lib/api'
 import useFetch from '../utils/useFetch'
 import { FaCocktail, FaFolder, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { IoMdClose } from 'react-icons/io'
@@ -10,7 +10,9 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const { data: alcoholList} = useFetch(getAlcoholList)
 
-  // console.log(alcoholList.drinks[39].strIngredient1)
+  // console.log("alcohol list: ", alcoholList)
+
+
 
   return (
     <>

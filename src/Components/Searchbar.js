@@ -7,7 +7,7 @@ export default function Searchbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [searchTerm, setSearchTerm] = useState('')
 
-  console.log(searchTerm)
+  // console.log(searchTerm)
 
   const handleChange = e => {
     setSearchTerm(e.target.value)

@@ -8,8 +8,8 @@ export default function CocktailIndex({ match }) {
   
   const { data: alcoholSelection, loading, error } = useFetch(getAlcoholSelection, alchohol)
 
-  console.log(match.params)
-  console.log(error)
+  // console.log(match)
+  // console.log(error)
 
     return (
       <div className="section-wrapper">

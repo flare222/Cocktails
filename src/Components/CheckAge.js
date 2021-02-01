@@ -8,7 +8,7 @@ import useFetch from '../utils/useFetch'
 
 const CheckAge = () => {
   const { data: cocktailOTD, loading } = useFetch(getRandomCocktail)
-  console.log()
+  // console.log(cocktailOTD)
 
   return (
     <>
