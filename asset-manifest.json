@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cocktails/static/css/main.25cb77be.chunk.css",
-    "main.js": "/cocktails/static/js/main.8da3bc76.chunk.js",
-    "main.js.map": "/cocktails/static/js/main.8da3bc76.chunk.js.map",
+    "main.js": "/cocktails/static/js/main.4c646e0c.chunk.js",
+    "main.js.map": "/cocktails/static/js/main.4c646e0c.chunk.js.map",
     "runtime-main.js": "/cocktails/static/js/runtime-main.040d3ce3.js",
     "runtime-main.js.map": "/cocktails/static/js/runtime-main.040d3ce3.js.map",
     "static/js/2.ffc3056a.chunk.js": "/cocktails/static/js/2.ffc3056a.chunk.js",
     "static/js/2.ffc3056a.chunk.js.map": "/cocktails/static/js/2.ffc3056a.chunk.js.map",
     "index.html": "/cocktails/index.html",
-    "precache-manifest.503cb2071fd6fc925521d150dea806bd.js": "/cocktails/precache-manifest.503cb2071fd6fc925521d150dea806bd.js",
+    "precache-manifest.e528e24f5df7314c0b0bafd28a290707.js": "/cocktails/precache-manifest.e528e24f5df7314c0b0bafd28a290707.js",
     "service-worker.js": "/cocktails/service-worker.js",
     "static/css/main.25cb77be.chunk.css.map": "/cocktails/static/css/main.25cb77be.chunk.css.map",
     "static/js/2.ffc3056a.chunk.js.LICENSE.txt": "/cocktails/static/js/2.ffc3056a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.040d3ce3.js",
     "static/js/2.ffc3056a.chunk.js",
     "static/css/main.25cb77be.chunk.css",
-    "static/js/main.8da3bc76.chunk.js"
+    "static/js/main.4c646e0c.chunk.js"
   ]
 }
